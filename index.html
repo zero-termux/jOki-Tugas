@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Joki Tugas</title>
+  <link rel="stylesheet" type="text/css" href="joki.css">
+</head>
+<body>
+<div id="parent">
+  <center><img src="20231017_083938.png" alt="hdr" class="hdr"></center>
+  <form>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="tugas">Tugas yang akan dijoki:</label>
+    <select name="tugas" id="tugas">
+      <option value="pdf">tugas pdf</option>
+      <option value="excel">tugas excel</option>
+      <option value="mapel">tugas mapel</option>
+      <option value="canva">tugas canva</option>
+      <option value="ppt">tugas ppt</option>
+      <option value="edit">tugas vidio editing</option>
+    </select>
+
+    <label for="keterangan">Keterangan:</label>
+    <textarea id="keterangan" name="keterangan" maxlength="400" required></textarea>
+
+    <center><input type="submit" value="Submit" onclick="kirimPesan()"></center>
+  </form>
+  
+  <footer>
+    <h3 id="ftr">© copyright by jOki tugas</h3>
+  </footer>
+  
+</div>
+  <script>
+    // JavaScript untuk mengirim pesan ke nomor WhatsApp
+    function kirimPesan() {
+      const nama = document.getElementById("nama").value;
+      const tugas = document.getElementById("tugas").value;
+      const keterangan = document.getElementById("keterangan").value;
+
+      const nomorWhatsApp = "+6282322130715";
+      const pesanWhatsApp = `Nama : ${nama}%0ATugas : ${tugas}%0AKeterangan : ${keterangan}`;
+
+      window.open(`https://wa.me/${nomorWhatsApp}?text=${pesanWhatsApp}`, "_blank");
+    }
+  </script>
+</body>
+</html>

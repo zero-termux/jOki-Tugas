@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#parent {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: url(background.png);
+  padding: 20px;
+}
+
+img.hdr {
+  width: 180px;
+  height: 110px;
+  position: relative;
+  top: 28px;
+}
+
+form {
+  width: 290px;
+  height: 325px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: opacity(0.7);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #4CAF50;
+  margin-top: 3px;
+}
+
+input[type="text"],
+textarea {
+  width: 92%;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+textarea#keterangan {
+  height: 60px;
+  font-family: arial;
+}
+
+select#tugas {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: white;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color: #4CAF50;
+  border: 2px dashed #4CAF50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+h3#ftr {
+  margin-top: 5px;
+  font-family: verdana;
+  font-size: 10px;
+  margin-left: 5px;
+  color: #4CAF50;
+}
+
+@media screen and (min-width: 600px) {
+ 
+  body {
+    width: auto;
+    height: auto;
+  }
+ 
+  h3#ftr {
+    text-align: center;
+  }
+  form {
+    width: 400px;
+  }
+}
